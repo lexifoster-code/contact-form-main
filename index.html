@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  <form>
+ <h1> Contact Us</h1>
+ <div class="input-container">
+ <label> First Name</label>
+  <input type="text" id="nameInput" required>
+  <span id="error-message">This field is required</span>
+
+  <label>Last Name</label>
+  <input type="text" id="nameInput">
+  <span id="error-message">This field is required</span>
+
+  <label>Email Address</label>
+  <input type="text" id="nameInput" >
+  <span id="error-message">This field is required</span>
+
+ 
+
+  <label>Query Type</label>
+  <div class="radio-container">
+  <input type="radio" id="generalEnquiry" name="queryType" value="General Enquiry">
+  <label for="generalEnquiry">General Enquiry</label>
+  </div>
+  <div class="radio-container">
+  <input type="radio" id="supportRequest" name="queryType" value="Support Request">
+  <label for="supportRequest">Support Request</label>
+  </div>
+  <span id="error-message">Please select a query type</span>
+
+  <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <span class="error-message" id="error-message">This field is required</span>
+
+   
+    <label for="consent">
+      <input type="checkbox" id="consent" name="consent" required>
+      I consent to being contacted by the team
+    </label>
+    <span class="error-message" id="errorConsent">To submit this form, please consent to being contacted</span>
+
+  <button type="Submit">Submit</button>
+</form>
+  <span class="success-message">Message Sent!
+  Thanks for completing the form. We'll be in touch soon!</span>
+  
+ 
+</body>
+</html>

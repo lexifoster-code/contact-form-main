@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(148, 38%, 91%);
+    font-family: 'Karla' , sans-serif;
+  
+}
+
+    form {
+      max-width: 500px;
+      height:900px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 8px;
+      padding:10px;
+      margin:10px;
+    }
+  
+    input[type="text"],
+    input[type="email"]
+     {
+      font-size: 16px;
+      border-radius: 5px;
+      border: solid .5px grey;
+      height:40px;
+    }
+
+    input[type="checkbox"]{
+        margin-right:10px;
+
+    }
+    .radio-container{
+      font-size: 16px;
+      border-radius: 5px;
+      border: solid .5px grey;
+      height:50px;
+      display: flex;
+      align-items: center;
+      gap:8px;
+      padding:10px;
+    }
+  
+    textarea {
+      font-size: 16px;
+      border-radius: 5px;
+      border-style: solid .5px grey;
+      height:230px;
+    }
+    button[type="submit"] {
+      max-width: 250px;
+     height: 40px;
+      font-size: 18px;
+      background-color: hsl(169, 82%, 27%);
+      color: white;
+      border-radius: 7px;
+      border-style: none;
+    }
+  
+    #errorConsent,
+    #error-message{
+        font-size: 14px;
+      display: none;
+    }
+    .success-message {
+      font-size: 14px;
+      display: none;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        gap:14px;
+        margin:20px;
+    }
+    
+  label{
+    font-size:16px;
+  }
+  
+  h1{
+    padding:10px;
+  }
