@@ -22,17 +22,17 @@
     <div class="input-group">
  <label for="name" class="first-name"> First Name</label>
   <input type="text" id="first-name" required>
-  <span id="error-firstname">This field is required</span>
+  <span class ="error" id="error-firstname">This field is required</span>
 </div>
 <div class="input-group">
   <label for="name" class="last-name">Last Name</label>
   <input type="text" id="last-name">
-  <span id="error-lastname">This field is required</span>
+  <span  class ="error" id="error-lastname">This field is required</span>
 </div>
 </div>
   <label>Email Address</label>
   <input type="email" id="Email" >
-  <span id="error-email">This field is required</span>
+  <span  class ="error" id="error-email">This field is required</span>
 
  
 
@@ -45,24 +45,24 @@
   <input type="radio" id="supportRequest" name="queryType" value="Support Request">
   <label for="supportRequest">Support Request</label>
   </div>
-  <span id="error-query">Please select a query type</span>
+  <span class ="error" id="error-query">Please select a query type</span>
 
   <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea>
-    <span class="error-message" id="error-message">This field is required</span>
+    <span class="error" id="error-message">This field is required</span>
 
    
     <label for="consent">
       <input type="checkbox" id="consent" name="consent" required>
       I consent to being contacted by the team
     </label>
-    <span class="error-message" id="errorConsent">To submit this form, please consent to being contacted</span>
+    <span class="error' id="errorConsent">To submit this form, please consent to being contacted</span>
 
   <button id='submitBtn'type="Submit">Submit</button>
 </form>
   <span class="success-message">Message Sent!
   Thanks for completing the form. We'll be in touch soon!</span>
   
- 
+ <script src="./script.js"></script>
 </body>
 </html>

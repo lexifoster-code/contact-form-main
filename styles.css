@@ -59,10 +59,12 @@ body{
       border-style: none;
     }
   
-    #errorConsent,
-    #error-message{
+   .error{
         font-size: 14px;
         display: none;
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
     }
     .success-message {
       font-size: 14px;
@@ -95,6 +97,12 @@ body{
   input:hover{
    border: solid hsl(169, 82%, 27%);
   }
+  
+  input:invalid {
+    border-color: rgb(254, 8, 8);
+    background-color: rgba(230, 122, 122, 0.194);
+  }
+
 
 .radio-container:hover{
     border: solid hsl(169, 82%, 27%);
