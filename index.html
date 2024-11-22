@@ -21,18 +21,18 @@
   <div class="name-input">
     <div class="input-group">
  <label for="name" class="first-name"> First Name</label>
-  <input type="text" id="nameInput" required>
-  <span id="error-message">This field is required</span>
+  <input type="text" id="first-name" required>
+  <span id="error-firstname">This field is required</span>
 </div>
 <div class="input-group">
   <label for="name" class="last-name">Last Name</label>
-  <input type="text" id="nameInput">
-  <span id="error-message">This field is required</span>
+  <input type="text" id="last-name">
+  <span id="error-lastname">This field is required</span>
 </div>
 </div>
   <label>Email Address</label>
-  <input type="email" id="nameInput" >
-  <span id="error-message">This field is required</span>
+  <input type="email" id="Email" >
+  <span id="error-email">This field is required</span>
 
  
 
@@ -45,7 +45,7 @@
   <input type="radio" id="supportRequest" name="queryType" value="Support Request">
   <label for="supportRequest">Support Request</label>
   </div>
-  <span id="error-message">Please select a query type</span>
+  <span id="error-query">Please select a query type</span>
 
   <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea>
@@ -58,7 +58,7 @@
     </label>
     <span class="error-message" id="errorConsent">To submit this form, please consent to being contacted</span>
 
-  <button type="Submit">Submit</button>
+  <button id='submitBtn'type="Submit">Submit</button>
 </form>
   <span class="success-message">Message Sent!
   Thanks for completing the form. We'll be in touch soon!</span>
