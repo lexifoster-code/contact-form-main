@@ -15,7 +15,11 @@
   
 </head>
 <body>
-  <form>
+  <div class="success-message">
+    <span><img src="./assets/images/icon-success-check.svg" alt="success">Message Sent!</span>
+   <span> Thanks for completing the form. We'll be in touch soon!</span>
+  </div>  
+  <form id="myForm">
  <h1> Contact Us</h1>
  <div class="input-container">
   <div class="name-input">
@@ -32,7 +36,7 @@
 </div>
   <label>Email Address</label>
   <input type="email" id="Email" >
-  <span  class ="error" id="error-email">This field is required</span>
+  <span class ="error" id="error-email">This field is required</span>
 
  
 
@@ -56,13 +60,10 @@
       <input type="checkbox" id="consent" name="consent" required>
       I consent to being contacted by the team
     </label>
-    <span class="error' id="errorConsent">To submit this form, please consent to being contacted</span>
+    <span class="error" id="errorConsent">To submit this form, please consent to being contacted</span>
 
   <button id='submitBtn'type="Submit">Submit</button>
 </form>
-  <span class="success-message">Message Sent!
-  Thanks for completing the form. We'll be in touch soon!</span>
-  
- <script src="./script.js"></script>
 </body>
+<script src="./script.js"></script>
 </html>

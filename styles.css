@@ -5,12 +5,13 @@
 body{
     background-color:  hsl(148, 38%, 91%);
     font-family: 'Karla' , sans-serif;
+    display: flex;
+    flex-direction: column;
   
 }
 
     form {
       max-width: 500px;
-      height:950px;
       padding: 15px;
       background-color: white;
       border-radius: 8px;
@@ -66,11 +67,7 @@ body{
         font-size: 12px;
         margin-top: 5px;
     }
-    .success-message {
-      font-size: 14px;
-      display: none;
-    }
-
+   
     .input-container{
         display: flex;
         flex-direction: column;
@@ -82,6 +79,10 @@ body{
     font-size:16px;
   }
   
+
+ 
+  
+
   h1{
     padding:15px;
     font-weight: 400;
@@ -98,12 +99,6 @@ body{
    border: solid hsl(169, 82%, 27%);
   }
   
-  input:invalid {
-    border-color: rgb(254, 8, 8);
-    background-color: rgba(230, 122, 122, 0.194);
-  }
-
-
 .radio-container:hover{
     border: solid hsl(169, 82%, 27%);
     background-color:  hsl(148, 38%, 91%); 
@@ -115,11 +110,47 @@ textarea:hover{
     border: solid hsl(169, 82%, 27%);
 }
 
+.success-message{
+  width:50%;
+  background-color: hsl(170, 91%, 13%);
+  display: none;
+  flex-direction: column;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  align-self:center;
+ 
+}
+
+.success-message img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.success-message span {
+  margin-top: 8px;
+}
+.name-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Ensure vertical stacking on smaller screens */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column; /* Ensure labels and inputs are stacked */
+  width: 100%;
+}
+
+
 @media (min-width: 768px) {
     body {
         height: 100vh; 
         margin: 0;      
         display: flex; 
+        flex-direction: column;
         justify-content: center;  
         align-items: center;      
        
@@ -127,7 +158,6 @@ textarea:hover{
       
     form {
         width: 700px;
-        height:700px;
         padding: 15px;
         background-color: white;
         border-radius: 8px;
@@ -138,10 +168,12 @@ textarea:hover{
        
       }
       
+      
   
       .name-input {
         display: flex;  
-        gap: 20px;     
+        gap: 20px; 
+        flex-direction: row;    
       }
       
       .input-group {
@@ -165,4 +197,16 @@ textarea:hover{
       textarea {
         height:100px;
    }
+
+   .success-message{
+    width:auto;
+    background-color: hsl(170, 91%, 13%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 8px;
+    position:relative;
+    margin-top:50px;
+    display: none;
+  }
 }
